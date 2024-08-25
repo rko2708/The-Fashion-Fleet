@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /**
  * v0 by Vercel.
  * @see https://v0.dev/t/DKYLUpHadNw
@@ -5,6 +6,7 @@
  */
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import React from "react"
 
 export default function Component() {
   return (
