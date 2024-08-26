@@ -20,7 +20,7 @@ export default function Component() {
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           <Link
-            href="#"
+            href="#we-are-building"
             onClick={() => (window.location.href = "#we-are-building")}
             className="text-sm font-medium hover:underline underline-offset-4"
             prefetch={false}
@@ -28,8 +28,8 @@ export default function Component() {
             Try at Home
           </Link>
           <Link
-            href="#"
-            onClick={() => (window.location.href = "#contact")}
+            href="#contact-info"
+            onClick={() => (window.location.href = "#contact-info")}
             className="text-sm font-medium hover:underline underline-offset-4"
             prefetch={false}
           >
@@ -143,7 +143,7 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="bg-white py-12 md:py-24 lg:py-32">
+        <section id="we-are-building" className="bg-white py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6 text-center space-y-4 md:space-y-6">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">We're Still Building</h2>
             <p className="text-lg md:text-xl text-muted-foreground">
@@ -207,7 +207,7 @@ export default function Component() {
           </div>
         </section>
       </main>
-      <section className="bg-white py-6 md:py-12 lg:py-16">
+      <section id="contact-info" className="bg-white py-6 md:py-12 lg:py-16">
         <div className="container px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="grid grid-cols-1 gap-2">
             <div className="grid grid-cols-[100px_1fr] gap-2">
