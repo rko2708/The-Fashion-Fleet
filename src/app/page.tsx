@@ -72,7 +72,7 @@ export default function Component() {
             </div>
             <div className="hidden md:block">
               <img
-                src="/placeholder.svg"
+                src="/image-2.jpg"
                 width={600}
                 height={600}
                 alt="Fashion Delivery"
@@ -86,7 +86,7 @@ export default function Component() {
           <div className="container px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
               <img
-                src="/placeholder.svg"
+                src="/image-top.jpg"
                 width={600}
                 height={600}
                 alt="Try at Home"
