@@ -226,7 +226,7 @@ export default function Component() {
                 <p>
                   <MailIcon className="mr-2 inline-block h-4 w-4 text-muted-foreground" />
                   <a href="#" className="hover:underline">
-                    ashigup07@gmail.com
+                    enquiry@thefashionfleet.com
                   </a>
                 </p>
                 <p>
