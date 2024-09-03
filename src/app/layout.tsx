@@ -1,33 +1,22 @@
-// This is the root layout component for your Next.js app.
-// Learn more: https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#root-layout-required
-import { Inter } from 'next/font/google'
-import { cn } from '@/lib/utils'
 import './globals.css'
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 
-const fontHeading = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-heading',
-})
+const inter = Inter({ subsets: ['latin'] })
 
-const fontBody = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-body',
-})
+export const metadata: Metadata = {
+  title: 'Fashion E-commerce',
+  description: 'Your one-stop shop for trendy fashion',
+}
 
-export default function Layout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <body 
-        className={cn(
-          'antialiased',
-          fontHeading.variable,
-          fontBody.variable
-        )}
-      >
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
