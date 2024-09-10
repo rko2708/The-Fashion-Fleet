@@ -155,7 +155,7 @@ export default function Component() {
 							<p className="text-lg md:text-xl text-muted-foreground">
 								Our unique delivery service allows you to try on
 								the latest fashion trends in the comfort of your
-								own home. Order now and we'll deliver your items
+								own home. Order now and we&apos;ll deliver your items
 								within 2 hours, free of charge.
 							</p>
 							<Button
@@ -179,7 +179,7 @@ export default function Component() {
 						<p className="text-lg md:text-xl text-muted-foreground">
 							Our unique delivery service allows you to try on the
 							latest fashion trends in the comfort of your own
-							home. Here's how it works:
+							home. Here&apos;s how it works:
 						</p>
 						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
 							<div className="bg-white rounded-lg shadow-md p-4 md:p-6 space-y-2">
@@ -222,11 +222,11 @@ export default function Component() {
 				>
 					<div className="container px-4 md:px-6 text-center space-y-4 md:space-y-6">
 						<h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-							We're Still Building
+							We&apos;re Still Building
 						</h2>
 						<p className="text-lg md:text-xl text-muted-foreground">
 							Our product selection is currently limited, but
-							we're working hard to bring you the best in luxury
+							we&apos;re working hard to bring you the best in luxury
 							fashion. Stay tuned for more updates and exciting
 							new arrivals.
 						</p>
@@ -312,7 +312,7 @@ export default function Component() {
 								<CollapsibleContent className="bg-muted p-4 rounded-lg">
 									<p className="text-muted-foreground">
 										Yes, we have a 7-day return policy for
-										all items. If you're not satisfied with
+										all items. If you&apos;re not satisfied with
 										your purchase, you can return it for a
 										full refund or exchange. Simply contact
 										our customer service team to initiate
