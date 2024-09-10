@@ -11,6 +11,23 @@ export async function POST(req) {
 		);
 	}
 
+	// Basic email format validation using a regular expression
+	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	if (!emailRegex.test(email)) {
+		return NextResponse.json(
+			{ error: "Invalid email format." },
+			{ status: 400 }
+		);
+	}
+
+	// Check for length
+	if (email.length > 254) {
+		return NextResponse.json(
+			{ error: "Email is too long." },
+			{ status: 400 }
+		);
+	}
+
 	try {
 		// Check if the email already exists in the database
 		const [rows]: any = await db.query(
@@ -26,7 +43,10 @@ export async function POST(req) {
 		}
 
 		// Insert the new email into the subscriptions table
-		await db.query("INSERT INTO subscriptions (email) VALUES (?)", [email]);
+		await db.query(
+			"INSERT INTO subscriptions (email) VALUES (?)",
+			[email]
+		);
 
 		return NextResponse.json(
 			{ message: "Email subscribed successfully." },
