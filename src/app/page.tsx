@@ -32,6 +32,7 @@ export default function Component() {
 			if (response.ok) {
 				setSubscribed(true);
 				setErrorMessage("");
+        setEmail("");
 			} else {
 				const data = await response.json();
 				setErrorMessage(data.message || "Something went wrong");
